@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.login">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UserLogin"
+            android:label="User Login"></activity>
+        <activity
+            android:name=".AdminLogin"
+            android:label="Admin Login"></activity>
+
+        <activity
+            android:name=".signUpAsUser"
+            android:label="Sign Up As User"></activity>
+
+        <activity android:name=".signUpAsAdmin"
+            android:label="Sign Up As Admin">
+           </activity>
+
+        <activity android:name=".order_user"
+            android:label="Place Order">
+        </activity>
+
+        <activity android:name=".admin_update_menu"
+            android:label="Daily Update"></activity>
+
+
+
+
+    </application>
+
+</manifest>
