@@ -1,47 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.android.login.MainActivity">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/loginu"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:text="Login as User" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/logina"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-android:text="Login as Admin"
-        />
+        <TextView
+            style="@style/Headings"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity = "center_horizontal"
+            android:text="Welcome to Hungry!\n\nPlease enter your contact number to sign in. "
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"/>
 
-
-    <Button
-        android:id="@+id/sign_up_user"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:text="Sign Up as User"
-        android:onClick="display"
-        />
-
-    <Button
-        android:id="@+id/sign_up_admin"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:text="Sign Up as Admin"
-        android:onClick="display"
-        />
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="70dp"
+            android:hint="8149634984"
+            android:inputType="number"/>
 
 
+        <Button
+            android:id="@+id/createAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="true"
+            android:layout_margin="20dp"
+            android:text="Create Account"
+            android:background="#00BCD4"
+            android:padding="5dp"
+            android:textColor="#FFF"
+            android:onClick="userSignIn"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="bottom"
+            android:layout_marginTop="200dp"
+            android:text="If admin, click here."
+            android:textSize="20dp"
+            android:onClick="adminlogin" />
+
+    </LinearLayout>
+
+</ScrollView>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical"-->
+    <!--tools:context="com.example.android.login.MainActivity">-->
+
+    <!--<Button-->
+    <!--android:id="@+id/loginu"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="Login as User" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/logina"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="Login as Admin"-->
+    <!--/>-->
 
 
-</LinearLayout>
+    <!--<Button-->
+    <!--android:id="@+id/sign_up_user"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="Sign Up as User"-->
+    <!--android:onClick="display"-->
+    <!--/>-->
+
+    <!--<Button-->
+    <!--android:id="@+id/sign_up_admin"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="Sign Up as Admin"-->
+    <!--android:onClick="display"-->
+    <!--/>-->
+
+
+
+
+    <!--</LinearLayout>-->

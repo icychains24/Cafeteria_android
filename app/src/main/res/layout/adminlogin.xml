@@ -8,15 +8,17 @@
     tools:context="com.example.android.login.AdminLogin"
     android:orientation="vertical">
 
-
+<!--The front page will lead here if  the 'For admin, click here'
+    text is clicked. -->
 
     <TextView
+        style="@style/Headings"
+        android:textColor="#000"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:layout_marginTop="30dp"
         android:textSize="24sp"
-        android:textColor="#000"
         android:text="Enter mobile number"
         android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -35,6 +37,7 @@
         android:inputType="number"/>
 
     <TextView
+        style="@style/Headings"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
@@ -56,12 +59,14 @@
 
     <Button
         android:id="@+id/loginButton"
+        android:background="#00BCD4"
+        android:textColor="#fff"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="30dp"
         android:onClick="login"
-        android:padding="20dp"
+        android:padding="15dp"
         android:text="Login" />
 
 
