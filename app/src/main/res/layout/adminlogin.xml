@@ -8,8 +8,8 @@
     tools:context="com.example.android.login.AdminLogin"
     android:orientation="vertical">
 
-<!--The front page will lead here if  the 'For admin, click here'
-    text is clicked. -->
+<!--The front page will lead to this if  the 'For admin, click here'
+    text is clicked. The admin logs in only once. -->
 
     <TextView
         style="@style/Headings"
@@ -20,14 +20,10 @@
         android:layout_marginTop="30dp"
         android:textSize="24sp"
         android:text="Enter mobile number"
-        android:textAllCaps="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textAllCaps="false" />
 
     <EditText
-        android:id="@+id/number"
+        android:id="@+id/phoneNumberEnterTextAdminLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -44,11 +40,11 @@
         android:layout_marginTop="30dp"
         android:textSize="24sp"
         android:textColor="#000"
-        android:text="Enter 4 digit PIN"
+        android:text="Enter 4 digit PIN\n(provided to you beforehand)"
         android:textAllCaps="false" />
 
     <EditText
-        android:id="@+id/pwd1"
+        android:id="@+id/pinAdminLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -58,8 +54,8 @@
 
 
     <Button
-        android:id="@+id/loginButton"
-        android:background="#00BCD4"
+        android:id="@+id/loginButtonAdminLogin"
+        android:background="@drawable/button"
         android:textColor="#fff"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -67,7 +63,7 @@
         android:layout_marginTop="30dp"
         android:onClick="login"
         android:padding="15dp"
-        android:text="Login" />
+        android:text="Login as the Admin" />
 
 
 </LinearLayout>

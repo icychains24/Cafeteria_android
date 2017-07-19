@@ -1,10 +1,7 @@
 package com.example.android.login;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
 
 /**
  * Created by USER on 6/28/2017.
@@ -19,10 +16,10 @@ public class UserLogin extends Activity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.userlogin);
+        //setContentView(R.layout.userlogin);
 
 
-         Button orders = (Button) findViewById(R.id.userLogin);
+        /* Button orders = (Button) findViewById(R.id.userLogin);
         orders.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View view) {
@@ -31,7 +28,7 @@ public class UserLogin extends Activity {
 
 
             }
-        });
+        }); */
     }
 
 }

@@ -1,119 +1,162 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="android.example.com.screens0.MainActivity">
+    tools:context="android.example.com.screens0.MainActivity"
+    android:orientation="vertical">
+
+    <!--This is the home page of the admin, which (s)he uses everyday. -->
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="160dp"
-        android:layout_height="40dp"
+        style="@style/Headings"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="ORDER NAME"
-        android:textSize="25dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        android:layout_marginBottom="20dp"
+        android:text="Select Today's Order:"
+        android:textSize="25sp" />
+
+    <Spinner
+        android:id="@+id/foodSpinnerMenuAdminUpdate"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:inputType="textAutoComplete"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp" />
+
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/updateItemButtonAdminUpdate"
+        android:background="@drawable/button"
+        android:padding="8dp"
+        android:textColor="#fff"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="25dp"
         android:text="UPDATE ITEM"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintHorizontal_bias="0.501" />
+        android:layout_gravity="center_horizontal" />
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <TextView
+        style="@style/Headings"
+        android:textSize="28sp"
         android:layout_marginTop="24dp"
-        android:ems="10"
-        android:inputType="date"
-        android:text="DATE"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:text="PENDING COUNT"
-        tools:layout_editor_absoluteY="306dp"
-        app:layout_constraintLeft_toRightOf="@+id/textView4"
-        android:layout_marginLeft="32dp" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:text="NO COUNT"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="32dp"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:text="YES COUNT"
-        tools:layout_editor_absoluteY="306dp"
-        app:layout_constraintRight_toLeftOf="@+id/textView4"
-        android:layout_marginRight="32dp" />
-
-    <EditText
-        android:id="@+id/editText2"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="INPUR ORDER"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="32dp" />
+        android:text="Count for [food item]" />
 
-    <TextView
-        android:id="@+id/textView5"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_weight="0.333"
+            android:layout_width="0dp"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#616161"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginLeft="-3dp"
+            android:textAllCaps="true"
+            android:text="Yes" />
+
+        <TextView
+            android:layout_weight="0.333"
+            android:layout_width="0dp"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#616161"
+            android:fontFamily="sans-serif-medium"
+            android:textAllCaps="true"
+            android:text="No" />
+
+        <TextView
+            android:layout_weight="0.333"
+            android:layout_width="0dp"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#616161"
+            android:fontFamily="sans-serif-medium"
+            android:textAllCaps="true"
+            android:text="Pending" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/yesCountTextAdminUpdate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.333"
+            android:gravity="center_horizontal"
+            android:text="0"
+            android:textSize="56sp"
+            android:textColor="#000"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:id="@+id/noCountTextAdminUpdate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.333"
+            android:gravity="center_horizontal"
+            android:text="0"
+            android:textSize="56sp"
+            android:textColor="#000"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:id="@+id/pendingCountTextAdminUpdate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.333"
+            android:gravity="center_horizontal"
+            android:text="0"
+            android:textSize="56sp"
+            android:textColor="#000"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginBottom="24dp"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/manageUsersButtonAdminUpdate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintRight_toLeftOf="@+id/textView6"
-        android:layout_marginRight="32dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        android:background="@drawable/button"
+        android:padding="8dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="#fff"
+        android:layout_marginTop="5dp"
+        android:textAllCaps="true"
+        android:text="Manage Users "
+        android:layout_gravity="center_horizontal"
+        />
 
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintLeft_toRightOf="@+id/textView6"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        android:layout_marginTop="32dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent" />
-</android.support.constraint.ConstraintLayout>
+
+</LinearLayout>
 

@@ -8,6 +8,6 @@ public class signUpAsAdmin extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.signupasadmin);
+        //setContentView(R.layout.signupasadmin);
     }
 }
