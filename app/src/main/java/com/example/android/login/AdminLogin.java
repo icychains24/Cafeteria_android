@@ -5,31 +5,50 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 /**
  * Created by USER on 6/28/2017.
  */
 
 public class AdminLogin extends AppCompatActivity {
-    @Override
 
+    String adminMobile;
+    String adminPin;
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.adminlogin);
 
 
-         Button update_admin = (Button) findViewById(R.id.loginButton);
-        update_admin.setOnClickListener(new View.OnClickListener() {
 
+        EditText phoneNumber = (EditText) findViewById(R.id.phoneNumberEnterTextAdminLogin);
+        adminMobile = phoneNumber.getText().toString();
+
+        EditText pin = (EditText) findViewById(R.id.pinAdminLogin);
+        adminPin = pin.getText().toString();
+
+
+        //When admin clicks the login button
+        Button loginAsAdmin = (Button) findViewById(R.id.loginButtonAdminLogin);
+        loginAsAdmin.setOnClickListener(new View.OnClickListener() {
+            @Override
             public void onClick(View view) {
-                Intent orderUp = new Intent(AdminLogin.this, admin_update_menu.class);
-                startActivity(orderUp);
 
+                //if(adminPin == "0000") {
+                Intent goToAdminUpdate = new Intent(AdminLogin.this, AdminUpdateMenu.class);
+                startActivity(goToAdminUpdate);
+                //}
+                //else
+                    //Toast.makeText(view.getContext(), "Wrong PIN entered!", Toast.LENGTH_SHORT).show();*/
 
             }
+
         });
-    }
-}
+
+    } //method OnCreate()
+} //class AdminLogin
 
 
 

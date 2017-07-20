@@ -55,7 +55,7 @@
         android:layout_marginBottom="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Count for [food item]" />
+        android:text="Count for today:" />
 
     <LinearLayout
         android:layout_width="match_parent"

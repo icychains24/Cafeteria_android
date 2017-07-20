@@ -17,25 +17,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".UserLogin"
-            android:label="User Login"></activity>
-        <activity
             android:name=".AdminLogin"
             android:label="Admin Login"></activity>
 
-        <activity
-            android:name=".signUpAsUser"
-            android:label="Sign Up As User"></activity>
-
-        <activity android:name=".signUpAsAdmin"
-            android:label="Sign Up As Admin">
-           </activity>
-
-        <activity android:name=".order_user"
+        <activity android:name=".OrderUser"
             android:label="Place Order">
         </activity>
 
-        <activity android:name=".admin_update_menu"
+        <activity android:name=".AdminUpdateMenu"
             android:label="Daily Update"></activity>
 
 
