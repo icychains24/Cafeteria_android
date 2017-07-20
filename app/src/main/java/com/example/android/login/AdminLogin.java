@@ -37,8 +37,8 @@ public class AdminLogin extends AppCompatActivity {
             public void onClick(View view) {
 
                 //if(adminPin == "0000") {
-                Intent goToAdminUpdate = new Intent(AdminLogin.this, AdminUpdateMenu.class);
-                startActivity(goToAdminUpdate);
+                Intent intent = new Intent(AdminLogin.this, AdminUpdateMenu.class);
+                startActivity(intent);
                 //}
                 //else
                     //Toast.makeText(view.getContext(), "Wrong PIN entered!", Toast.LENGTH_SHORT).show();*/
