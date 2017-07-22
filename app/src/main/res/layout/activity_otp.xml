@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.login.OTP"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/Headings"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity = "center_horizontal"
+        android:text="Just one more step!\n\nPlease enter the One Time Password sent to your contact number."
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/userMobileNumberInputActivityMain"
+        android:layout_alignParentRight="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="60dp"
+        android:hint="Enter OTP"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/userSignUpButtonActivityOTP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAllCaps="true"
+        android:layout_margin="20dp"
+        android:text="Sign Up"
+        android:padding="8dp"
+        android:textColor="#FFF"
+        android:background="@drawable/button"
+        android:onClick="createAccount" />
+
+</LinearLayout>

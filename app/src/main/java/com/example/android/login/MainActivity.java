@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,14 +21,14 @@ public class MainActivity extends AppCompatActivity {
         EditText userPhoneNumber = (EditText) findViewById(R.id.userMobileNumberInputActivityMain);
         phoneNumber = userPhoneNumber.getText().toString();
 
-        //When user clicks the Sign Up button
-        Button userSignUp = (Button) findViewById(R.id.userSignUpButtonActivityMain);
-        userSignUp.setOnClickListener(new View.OnClickListener() {
+        //When user clicks the Confirm button
+        Button userConfirm = (Button) findViewById(R.id.userConfirmButtonActivityMain);
+        userConfirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, OrderUser.class);
+                Intent intent = new Intent(MainActivity.this, OTP.class);
                 startActivity(intent);
-                Toast.makeText(view.getContext(), "Your account has been created!", Toast.LENGTH_LONG).show();
+
             }
         });
 

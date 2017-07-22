@@ -18,18 +18,14 @@
         </activity>
         <activity
             android:name=".AdminLogin"
-            android:label="Admin Login"></activity>
-
-        <activity android:name=".OrderUser"
-            android:label="Place Order">
-        </activity>
-
-        <activity android:name=".AdminUpdateMenu"
-            android:label="Daily Update"></activity>
-
-
-
-
+            android:label="Admin Login" />
+        <activity
+            android:name=".OrderUser"
+            android:label="Place Order"></activity>
+        <activity
+            android:name=".AdminUpdateMenu"
+            android:label="Daily Update" />
+        <activity android:name=".OTP"></activity>
     </application>
 
 </manifest>
