@@ -40,7 +40,7 @@
         android:layout_marginTop="30dp"
         android:textSize="24sp"
         android:textColor="#000"
-        android:text="Enter 4 digit PIN\n(provided to you beforehand)"
+        android:text="Enter the One Time Password sent to your number"
         android:textAllCaps="false" />
 
     <EditText
@@ -50,7 +50,8 @@
         android:layout_marginTop="20dp"
         android:layout_marginLeft="60dp"
         android:layout_marginRight="60dp"
-        android:inputType="numberPassword"/>
+        android:inputType="numberPassword"
+        android:hint="OTP"/>
 
 
     <Button
